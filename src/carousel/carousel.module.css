@@ -1,0 +1,31 @@
+.carousel {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.image {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.pagination {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.paginationItem {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.active {
+  width: 30px;
+  border-radius: 20px;
+  background-color: var(--green);
+}

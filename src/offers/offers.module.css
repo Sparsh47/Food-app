@@ -1,0 +1,47 @@
+.container {
+  margin-block: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.container hr {
+  height: 8px;
+  background: linear-gradient(to bottom, #888, #fff);
+  border: none;
+}
+
+.container img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.container p {
+  margin: 0;
+  animation: slideIn 2.5s ease-in-out infinite;
+}
+
+.container p:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
